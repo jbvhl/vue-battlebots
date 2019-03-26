@@ -80,7 +80,8 @@ export default {
     },
 
     battle() {
-      if (this.selectedBots[0].attack > this.selectedBots[1].attack) {
+      console.log(this.selectedBots)
+      if (parseInt(this.selectedBots[0].attack) > parseInt(this.selectedBots[1].attack)) {
         alert(`${this.selectedBots[0].bot} wins!`);
       } else {
         alert(`${this.selectedBots[1].bot} wins!`);
